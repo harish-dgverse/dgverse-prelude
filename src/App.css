@@ -1,0 +1,345 @@
+@font-face {
+  font-family: 'bazarmedium';
+  src: url('../src/Assets/fonts/bazar_2-webfont.woff2') format('woff2'),
+    url('../src/Assets/fonts/bazar_2-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  unicode-range: U+000-5FF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'typewrite';
+  src: url('../src/Assets/fonts/atypewriterforme-webfont.woff2') format('woff2'),
+    url('../src/Assets/fonts/atypewriterforme-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+#root .App {
+  background-image: url('../src/Assets/Background.jpg');
+  width: auto;
+  height: 100%;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  padding: 10px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  overflow: auto;
+}
+
+#root .outer-section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  height: max-content;
+}
+
+#root .header {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: max-content;
+}
+
+#root .logo {
+  display: inline-flex;
+  width: 33%;
+  height: 85px;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: hidden;
+}
+
+.newshead {
+  width: 33%;
+  display: inline-flex;
+  align-items: baseline;
+  justify-content: center;
+  object-fit: contain;
+  height: 100px;
+  background-repeat: no-repeat;
+}
+
+.newshead img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.logo img {
+  width: auto;
+  height: 100%;
+  object-fit: contain;
+  align-items: center;
+  justify-content: flex-start;
+  display: inline-flex;
+}
+
+.support {
+  display: flex;
+  width: 33%;
+  height: 85px;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.commingsoon {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  border-top: 3px solid #000;
+  border-radius: 1px;
+  padding: 20px;
+  border-bottom: 3px solid #000;
+  height: 15px;
+  margin: 10px 0 0 0;
+}
+
+span.supporticon {
+  padding: 0 0 0 10px;
+  cursor: pointer;
+}
+
+span.supporticon img {
+  width: 50px;
+}
+
+.slide {
+  display: inline-flex;
+  align-items: center;
+  height: 45px;
+}
+
+h3.title {
+    font-family: 'bazarmedium';
+    font-weight: 900;
+    margin: 10px 0 15px 0;
+    font-size: 1.3em;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    line-height: 1.6em;
+    text-shadow: 2px 5px 1px #ccc;
+}
+h3.title.maintitle{
+  font-size: 1.8em;
+}
+
+p.paragraph {
+  font-family: 'typewrite';
+  margin: 10px 0;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  white-space: normal;
+  word-break: break-word;
+  font-size: 18px;
+}
+
+.middlesview {
+  position: relative;
+}
+
+.middlesview::before {
+  content: '';
+  display: inline-flex;
+  width: 10px;
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  top: 2em;
+  object-fit: contain;
+  transform: translate(0, 0);
+  background-image: url('../src/Assets/seperate.svg');
+  background-size: cover;
+}
+
+/* .middlesview::after {
+  content: '';
+  display: inline-flex;
+  width: 10px;
+  height: 100vh;
+  position: absolute;
+  left: inherit;
+  right: -1em;
+  top: 2em;
+  object-fit: contain;
+  transform: rotate(180deg);
+  background-image: url('../src/Assets/seperate.svg');
+  background-size: cover;
+} */
+
+span.maincard {
+  display: inline-flex;
+  width: 100%;
+  height: auto;
+  object-position: center;
+}
+
+span.maincard img {
+  display: inline-flex;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.seperation {
+  position: relative;
+  margin: 0;
+}
+
+.seperation::before {
+  content: '';
+  position: absolute;
+  display: inline-flex;
+  width: 100%;
+  height: 1em;
+  background-size: contain;
+  background-position: 0;
+  background-repeat: no-repeat;
+  left: 0;
+  transform: translate(0, -1em);
+  background-image: url('../src/Assets/underline.svg');
+}
+
+.cardview {
+  padding: 16px 10px;
+}
+
+.MuiFormControl-root.email {
+  margin: 0 0 10px 0;
+}
+.email label {
+  font-family: 'typewrite';
+}
+
+.MuiButtonBase-root.sendbtn {
+  background: #000;
+  border-radius: 0px;
+  min-width: 150px;
+  font-family: 'typewrite';
+  color: #efe6cc;
+  position: relative;
+}
+
+.MuiButtonBase-root.sendbtn::after {
+  position: absolute;
+  content: '';
+  width: 90%;
+  height: 60%;
+  border: 1px solid #efe6cc;
+}
+.MuiGrid-root.MuiGrid-item{
+position: relative;
+}
+.copyright p {
+  font-family: 'typewrite';
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+}
+h3.title.mbt-0{
+  margin-bottom: 0;
+}
+.seperation .MuiButtonBase-root:hover{
+  background-color: #595959;
+}
+
+.css-1ptx2yq-MuiInputBase-root-MuiInput-root:after{
+  border-bottom: 2px solid #595959!important;
+}
+.css-1c2i806-MuiFormLabel-root-MuiInputLabel-root.Mui-focused{
+  color: #000!important;
+}
+label+.css-1ptx2yq-MuiInputBase-root-MuiInput-root{
+  margin-bottom: 20px;
+}
+.error{
+  margin: 0;
+    position: absolute;
+    bottom: 0;
+    transform: translate(0,-3.8em);
+    color: #fc5959;
+    font-family: 'typewrite';
+    font-weight: 800;
+    letter-spacing: 0.5px;
+}
+.sucess{
+  color: #219b21;
+    font-family: 'typewrite';
+    font-weight: 800;
+    letter-spacing: 0.5px;
+}
+.otherdevice{
+  display: flex;
+}
+.mobileview{
+  display: none;
+}
+.cardview.seperation {
+  width: 100%;
+  box-sizing: border-box;
+}
+@media only screen and (max-width: 600px) {
+  span.supporticon img {
+    width: 25px;
+  }
+
+  .logo img {
+    width: 70%;
+  }
+
+  .newshead img {
+    width: 80%;
+  }
+
+  .middlesview::before {
+    display: none;
+  }
+
+  .middlesview::after {
+    display: none;
+  }
+
+  .copyright p{
+    position: static;
+    top: inherit;
+    bottom: inherit;
+    right: inherit;
+    left: inherit;
+  }
+  h3.title{
+    font-size: 1.2em;
+  }
+  h3.title.maintitle{
+    font-size: 1.3em;
+  }
+  .otherdevice{
+    display: none;
+  }
+  .mobileview{
+    display: flex;
+  }
+  
+}
